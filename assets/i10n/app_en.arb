@@ -1,0 +1,51 @@
+{
+  "title": "Pasto Today !!",
+  "greeting": "Hi !, {name}",
+  "@greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "exampleCount": "{count, plural, =0{You not have products} =1{You only have one product} other{You have {count} products}}",
+  "@exampleCount": {
+    "description": "This is an example for plural strings",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "exampleEnums": "{category, select, phone{Phone} watch{Watch} other{Unknown}}",
+  "@exampleEnums": {
+    "description": "This is an example for select strings",
+    "placeholders": {
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "exampleMoney": "Your money: {value}",
+  "@exampleMoney": {
+    "description": "Example of number format",
+    "placeholders": {
+      "value": {
+        "type": "double",
+        "format": "currency",
+        "optionalParameters": {
+          "decimalDigits": 2
+        }
+      }
+    }
+  },
+  "exampleDay": "Today: {date}",
+  "@exampleDay": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      }
+    }
+  }
+}

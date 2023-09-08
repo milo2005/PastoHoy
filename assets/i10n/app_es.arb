@@ -1,0 +1,8 @@
+{
+  "title": "Pasto Hoy !!",
+  "greeting": "Hola !, {name}",
+  "exampleCount": "{count, plural, =0{No tienes productos} =1{Solo tienes un producto} other{Tienes {count} productos}}",
+  "exampleEnums": "{category, select, phone{Celular} watch{Reloj} other{Otro}}",
+  "exampleMoney": "Tu Dinero: {value}",
+  "exampleDay": "Hoy: {date}"
+}
