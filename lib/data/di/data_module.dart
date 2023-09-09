@@ -10,7 +10,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 @module
 abstract class DataModule {
   Dio getDio(AuthInterceptor interceptor) =>
-      Dio(BaseOptions(baseUrl: ""))
+      Dio(BaseOptions(baseUrl: "http://localhost:3000"))
         ..interceptors.add(interceptor);
 
   PlanApi getPlanApi(Dio dio) => PlanApi(dio);
