@@ -6,4 +6,4 @@ import 'package:pasto_hoy/di/app_injector.config.dart';
 final getIt = GetIt.instance;
 
 @injectableInit
-Future configureDependencies () async => getIt.init();
+Future configureDependencies () => getIt.init();
