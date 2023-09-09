@@ -28,12 +28,33 @@ class LoginPage extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 20),
-          Padding(
-            padding: const EdgeInsets.all(12),
-            child: Column(
-              children: [
-                TextFormField()
-              ],
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Column(
+                children: [
+                  TextFormField(),
+                  const SizedBox(height: 12),
+                  TextFormField(),
+                  Spacer(),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: TextButton(
+                          onPressed: () {},
+                          child: Text("Registrate"),
+                        ),
+                      ),
+                      Expanded(
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text("Entrar"),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           )
         ],
