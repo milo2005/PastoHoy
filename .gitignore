@@ -46,3 +46,4 @@ app.*.map.json
 # Generated Files
 app_injector.config.dart
 *.g.dart
+*.freezed.dart
