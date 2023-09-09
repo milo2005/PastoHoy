@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
 import 'package:pasto_hoy/data/remote/adapter/credential_dto_adapter.dart';
 import 'package:pasto_hoy/data/remote/adapter/user_dto_adapter.dart';
 import 'package:pasto_hoy/data/remote/api/auth_api.dart';
@@ -9,6 +10,7 @@ import 'package:pasto_hoy/domain/login/models/user.dart';
 import 'package:pasto_hoy/domain/login/repositories/auth_repository.dart';
 import 'package:pasto_hoy/domain/util/async_result.dart';
 
+@LazySingleton(as: AuthRepository)
 final class AuthRepositoryImpl implements AuthRepository {
   final AuthApi _api;
   AuthRepositoryImpl(this._api);

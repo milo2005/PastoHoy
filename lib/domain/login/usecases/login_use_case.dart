@@ -1,9 +1,11 @@
+import 'package:injectable/injectable.dart';
 import 'package:pasto_hoy/domain/login/exceptions/login_exceptions.dart';
 import 'package:pasto_hoy/domain/login/models/credential.dart';
 import 'package:pasto_hoy/domain/login/repositories/auth_repository.dart';
 import 'package:pasto_hoy/domain/login/repositories/session_repository.dart';
 import 'package:pasto_hoy/domain/util/async_result.dart';
 
+@lazySingleton
 final class LoginUseCase {
 
   final AuthRepository _authRepository;

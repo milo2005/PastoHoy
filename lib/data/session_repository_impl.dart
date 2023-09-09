@@ -1,6 +1,9 @@
+import 'package:injectable/injectable.dart';
+
 import '../domain/login/repositories/session_repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+@LazySingleton(as: SessionRepository)
 final class SessionRepositoryImpl implements SessionRepository {
 
   final SharedPreferences _preferences;
@@ -8,7 +11,7 @@ final class SessionRepositoryImpl implements SessionRepository {
 
   @override
   String? getToken() {
-    _preferences.getString("token");
+    return _preferences.getString("token");
   }
 
   @override
